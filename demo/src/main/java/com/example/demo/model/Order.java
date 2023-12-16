@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Data;
 
+@SuppressWarnings("unused")
 @Entity
 @Table(name="order")
 @Data
@@ -45,6 +46,7 @@ public class Order {
         this.ordered_products = ordered_products;
     }
 
+    @SuppressWarnings("unused")
     public String getAddress() {
         return address;
     }
