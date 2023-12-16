@@ -1,17 +1,32 @@
 package com.example.demo.model;
 
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Table(name="order")
+@Data
 public class Order {
-
+    @Column(name="order_number",length=45,nullable = false)
     private int order_number;
+    @Column(name="products",length=100,nullable = false)
     private String products;
+    @Column(name="phone_number",length=100,nullable = false)
     private int phone_number;
+    @Column(name="address",length=100,nullable = false)
     private String address;
-
+    @Column(name="comments",length=100,nullable = false)
     private String comments;
+    @Column(name="total_amount",length=45,nullable = false)
     private String total_amount;
+    @Column(name="created_at",length=100,nullable = false)
     private String created_at;
+    @Column(name="delivery_cost",length=100,nullable = false)
     private int delivery_cost;
-
+    @Column(name="ordered_products",length=100,nullable = false)
     private String ordered_products;
 
     public Order() {

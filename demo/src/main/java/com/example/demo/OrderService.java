@@ -2,9 +2,10 @@ package com.example.demo;
 
 import com.example.demo.model.Order;
 import com.example.demo.model.OrderItem;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class OrderService {
     private final List<Order> orders;  // Assuming you have a list of orders as a data source
     private Long orderId;
